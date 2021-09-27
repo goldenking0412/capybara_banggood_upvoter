@@ -14,6 +14,9 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
+    capybara-webkit (1.15.1)
+      capybara (>= 2.3, < 4.0)
+      json
     childprocess (1.0.1)
       rake (< 13.0)
     chromedriver-helper (2.1.1)
@@ -21,17 +24,21 @@ GEM
       nokogiri (~> 1.8)
     cliver (0.3.2)
     deathbycaptcha (5.1.0)
+    headless (2.3.1)
     io-like (0.3.0)
+    json (2.5.1)
     mini_mime (1.0.2)
-    mini_portile2 (2.4.0)
-    nokogiri (1.10.3)
-      mini_portile2 (~> 2.4.0)
+    mini_portile2 (2.6.1)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
     phantomjs (2.1.1.0)
     poltergeist (1.18.1)
       capybara (>= 2.1, < 4)
       cliver (~> 0.3.1)
       websocket-driver (>= 0.2.0)
     public_suffix (3.1.1)
+    racc (1.5.2)
     rack (2.0.7)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -53,8 +60,10 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capybara
+  capybara-webkit
   chromedriver-helper
   deathbycaptcha
+  headless
   phantomjs
   poltergeist
   selenium-webdriver
